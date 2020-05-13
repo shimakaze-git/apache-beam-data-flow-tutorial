@@ -32,8 +32,8 @@ class DoFnMethods(beam.DoFn):
     def teardown(self):
         # print("teardown")
         # print('self._list = []', self._list)
-        # return self._list
-        yield self._list
+        return self._list
+        # yield self._list
 
 
 with beam.Pipeline() as pipeline:
